@@ -1,0 +1,30 @@
+#div1 {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid #ff0000;
+}
+
+#left {
+    border: 1px solid rgb(250, 1, 1);
+    width: 209px;
+    height: 209px;
+    float: left
+}
+
+#right {
+    border: 1px solid rgb(255, 0, 0);
+    width: 209px;
+    height: 209px;
+    float: right;
+}
+
+#container {
+    width: 580px;
+    margin: auto;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+}

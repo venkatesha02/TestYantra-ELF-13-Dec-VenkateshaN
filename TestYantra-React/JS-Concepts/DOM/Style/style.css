@@ -1,0 +1,10 @@
+.add {
+    color: cyan;
+    font-size: large;
+    font-family: monospace;
+    border: 1px solid darkviolet;
+}
+
+.header {
+    padding: 40px;
+}

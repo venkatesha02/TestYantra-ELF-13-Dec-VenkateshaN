@@ -1,0 +1,42 @@
+<!DOCtype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="col-md-4 card card-body offset-1 mt-5 float-left">
+        <form name="live" class="bg-light">
+            <h3 class="text-center">Age Calculator</h3>
+            <table class="table">
+                <tr>
+                    <td>Date of birth:</td>
+                    <td>
+                        <input type="text" name="age" class="form-control" size=20 placeholder="January 10, 1994" onkeyup="lifetimer(this.form)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>You are days old:</td>
+                    <td>
+                        <input type="text" name="time1" class="form-control" size=8 readonly>
+                    </td>
+                </tr>
+
+                <td>
+                    <input type="reset" class="btn btn-outline-danger" name="resetb" value="Reset Age">
+                </td>
+            </table>
+        </form>
+    </div>
+    <script src="dob.js"></script>
+
+</body>
+
+</html>

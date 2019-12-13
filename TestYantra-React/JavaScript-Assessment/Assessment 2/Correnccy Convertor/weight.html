@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Weight Converted</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center">Weight Converter</h1>
+                <form>
+                    <div class="form-row">
+                        <div class="col col-sm-8">
+                            <input id="lbsInput" type="number" class="form-control form-control-lg mr-2 mb-2" placeholder="Input Value..." autocomplete="off">
+                        </div>
+                        <div class="col col-4">
+                            <select id="selectOption" name="selectOption" class="form-control form-control-lg" onchange="formula(this)">
+                                <option selected value="default">From...</option>
+                                <option value="kg">Kg</option>
+                                <option value="pound" >Pound</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="output">
+
+                    <div class="card mt-2 bg-info pl-2">
+                        <div class="card-block">
+                            <h4>Pound:</h4>
+                            <div id="poundOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-2 bg-success pl-2">
+                        <div class="card-block">
+                            <h4>Grams:</h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-warning mt-2">
+                        <div class="card-block pl-2">
+                            <h4>Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-2 bg-danger pl-2">
+                        <div class="card-block">
+                            <h4>KiloGrams:</h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="weight.js"></script>
+</body>
+
+</html>
